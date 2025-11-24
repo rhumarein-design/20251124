@@ -1,0 +1,257 @@
+/*chercher la police dans un dossier*/
+@font-face { 
+  font-family: 'Brown Sugar';
+  src: url('fonts/brown-sugar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Poiret One';
+    src: url('fonts/PoiretOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* déclaraton de variable - police - couleur */
+:root{
+    --varDiakoniaFont: 'Brown Sugar';
+    --varDiakoniaSubFont: 'Montserrat';
+    --varDiakoniaPoiret: 'Poiret One', cursive;
+
+
+    --varTextSize:clamp(0.8rem, 1.2vw, 1.5rem);
+    --varSubTitleSize:clamp(1rem, 1.6vw, 2.3rem);
+
+
+    --varColorBeigeFonce: #fbdeb6;
+    --varColorBeigeClair:#fbecca;
+    --varColorBeigeClairBis:#fff3e4;
+    --varColorOrangeClair:#f2c172;
+    --varColorOrangePale:#fbc890;
+    --varColorSaumon:#fbc39c;
+    --varColorOrangeBrun:#e4a853;
+    --varColorMarronClairPale:#c4ac84;
+    --varColorMarronPale:#a5845c;
+    --varColorMarronPaleBis: #e9d0b8;
+    --varColorMarronClair:#d2ac84;
+    --varColorMarron: #653b01;
+    --varColorMarronTransparent: #653b013a;
+    --varColorMarronClairTransparent: #d2ac8448;
+    
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0 2%;
+    padding-top: 110px;
+    background-color: rgb(255, 252, 252);
+
+}
+html{scroll-behavior:smooth;}
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+  transition: all 0.3s ease;
+}
+
+*::-webkit-scrollbar-track:hover {
+    
+  background-color: var(--varColorMarronClairTransparent);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--varColorMarronClairTransparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--varColorMarronClairTransparent);
+  opacity: 0.1;
+  transition: opacity 0.3s ease, height 0.3s ease, width 0.3s ease, background-color 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--varColorMarronTransparent);
+  opacity: 1;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--varColorMarronClairTransparent);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+*{
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    outline: rgba(137, 43, 226, 0.12) solid 1px;
+
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+.textNormalSizeAndColor{
+    font-family: var(--varDiakoniaSubFont);
+    font-size: var(--varTextSize);
+    color: var(--varColorMarron);
+    font-weight: lighter;
+}
+.TextEmphasizedPoiret{
+    font-family: var(--varDiakoniaSubFont);
+    font-size: var(--varSubTitleSize);
+    color: var(--varColorMarron);
+    font-weight: lighter;
+}
+.EmphasizeBold{
+    font-weight: bold;
+}
+.textJustify{
+    text-align: justify;
+}
+.textCenter{
+    text-align: center;
+}
+
+
+
+.btnJeDemandeUnDevis, .btnPlanifierAppel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    height: auto;
+    background-color: var(--varColorMarronPaleBis);
+    color: var(--varColorMarron);
+    font-family: var(--varDiakoniaSubFont);
+    font-size: clamp(1rem, 1.45vw, 1.6rem);
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 50px;
+    margin: 15px 0;
+    -webkit-box-shadow: 0 4px 8px rgba(101, 59, 1, 0.3);
+    box-shadow: 0 4px 8px rgba(101, 59, 1, 0.3);
+    transition: all 0.3s ease;
+}
+.btnJeDemandeUnDevis a, .btnPlanifierAppel a{
+    display: block;
+   
+}
+.btnJeDemandeUnDevis:hover, .btnPlanifierAppel:hover{
+    background-color: var(--varColorMarronPaleBis);
+    -webkit-box-shadow: 0 6px 12px rgba(101, 59, 1, 0.5);
+    box-shadow: 0 6px 12px rgba(101, 59, 1, 0.5);
+    color: var(--varColorMarron);
+    text-decoration: none;
+    outline: var(--varColorMarron) solid 1px;
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+}
+.btnJeDemandeUnDevis:active, .btnPlanifierAppel:active{
+    box-shadow: 0 2px 4px rgba(101, 59, 1, 0.5);
+    transform: scale(0.95);
+    transition: all 0.9s ease;
+}
+
+.logoAccroche{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: var(--varColorMarron);
+    text-align: center;
+    height: fit-content;
+    width: fit-content ;
+    
+    
+}
+.logoAccroche h1{
+    display: block;
+    font-family: var(--varDiakoniaFont);
+    font-weight: lighter;
+    font-size: clamp(2.1rem, 3.7vw, 4.5rem);
+    line-height: 0.8;
+    padding: 6% 0 0 0;
+    z-index: 2;
+    
+    
+}
+.logoAccroche h2{
+    display: block;
+    font-family: var(--varDiakoniaSubFont);
+    font-weight: lighter;
+    color: var(--varColorMarron);
+    font-size: clamp(0.8rem, 2vw, 2rem); 
+    line-height: 0.9;   
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    
+    
+}
+
+.ajoutLogoAccroche{
+    font-family: var(--varDiakoniaSubFont);
+    color: white;
+    outline: var(--varColorOrangeBrun);
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    background-color: #fff8f0; /* couleur de fond claire */
+    text-shadow: 
+                    0 0 10px #e68a00dc,
+                    0 0 20px #e68a00dc,
+                    0 0 40px #e68a00dc,
+                    0 0 80px #e68a00dc;
+
+    line-height: 0.9;
+    transform: translateY(-120%);
+    font-weight: lighter;
+    letter-spacing: 4px;
+
+}
+
+.highlight-marron {
+    background-image: url('image/highlight/highlight-marron.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.highlight-jaune {
+    background-image: url('image/highlight/highlight-jaune.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.highlight-saumon {
+    background-image: url('image/highlight/highlight-saumon.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.underliner-yellow{
+    background-image: url(image/highlight/underliner-jaune.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}

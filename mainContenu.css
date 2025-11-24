@@ -1,0 +1,626 @@
+
+
+
+.bandeauPresentation{
+        /* background-image:url("image/al-elmes-Cheers.jpg"); */
+    width: 100%;
+    align-content: center;
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+
+}
+.bandeauPresentation img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    object-fit: cover;
+    overflow: hidden;
+}
+.rectangleTexte{
+    background-color: var(--varColorMarronTransparent);
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titreRectangleTete{
+display: block;
+text-align: center;
+    font-family: var(--varDiakoniaFont);
+    font-weight: lighter;
+    line-height: 0.8;
+    color: var(--varColorBeigeClair);
+    font-size: clamp(3.8rem,9.5vw, 15rem);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-shadow: 8px 8px 10px rgba(0,0,0,0.5); /* Ombre floue sous le texte */
+    
+    
+
+}
+
+.sousTitreRectangleTete{
+display: block;
+text-align: center;
+    font-family: var(--varDiakoniaSubFont);
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-shadow: 8px 8px 10px rgba(0,0,0,0.5); /* Ombre floue sous le texte */
+    color: var(--varColorBeigeClair);
+    font-size: clamp(2.8rem,4.5vw, 7rem);
+    width: 100%;
+    
+    
+}
+
+.textRectangleTete{
+    display: block;
+    color: var(--varColorBeigeClair);
+    margin: 0;
+    padding: 0;
+    font-family: var(--varDiakoniaPoiret);
+    font-size: clamp(2rem, 2.6vw, 2.8rem);
+    text-shadow: 8px 8px 10px rgba(0,0,0,0.5); /* Ombre floue sous le texte */
+    
+}
+.tblPourquoiChoisir{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    align-items: center;
+    
+    
+}
+
+.tblPqChoisirImage img {
+
+    height: clamp(10vh, 30vh, 40vh);
+    display: block;
+    object-fit: scale-down;
+    
+}
+.tblContenuPqChoisir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+    
+}
+
+.PqChoisirColumn img {
+    height: 50px;
+
+    
+}
+.PqChoisirColumn{
+    display: grid;
+    grid-template-rows: 5vh auto;
+    padding: 1%;
+    text-align: center;
+    justify-items: center;
+    text-align: center;
+    
+  
+
+}
+.PqChoisirColumn p {
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarronPale);
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
+    padding: 1%;
+    height: 100px;
+}
+
+/* section conteneur grid Info ------------------------------- */
+.conteneurGridInfo{height: auto;}
+
+
+
+.conteneurPortoInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5px;
+    
+}
+.portoInfo{
+    
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    
+    /* pour superposer des éléments dans un grid */
+    display: grid;
+    grid-template: 1fr/1fr;
+    align-items: center;
+
+    width: 70%;
+    height: auto;
+    
+}
+    /* SUITE pour superposer des éléments dans un grid */
+
+.portoInfo img,
+.portoInfo p {
+  grid-area: 1 / 1; /* les deux éléments se superposent */
+}
+
+.portoInfo span{
+    display: inline-block;
+    margin-bottom: 2%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.portoInfo p {
+    display: inline-block;
+    z-index: 1;
+    
+    width: 100%;
+    font-family: var(--varDiakoniaSubFont);
+    text-align: center;
+    font-size: clamp(1.2vw, 1.5vw, 1.5rem);
+    color: var(--varColorMarron);
+}
+.portoInfo img{
+    position: relative;
+    z-index: 0;
+    height: auto;
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+.apercuSalle{
+    position: relative;
+    top: 5%;
+    right: -4%; /* on fait passer derrière l'image apercuSalle */
+    z-index: 0;
+    width: 100%;
+    object-fit: scale-down;
+    grid-row: 1/5;
+    grid-column: 2/5;
+}
+.apercuSalle img{
+    object-fit: scale-down;
+    max-height: 100vh;
+    width: 100%;
+}
+
+
+.bulleCause{
+    grid-column: 1/3;
+    grid-row: 3;
+    width: 100%;
+    
+    z-index: 1;
+    
+
+    display: grid;
+    grid-template: 1fr/1fr;
+    align-items: center;   
+
+    
+}
+.bulleCause img, .bulleCause p{
+    grid-area: 1/1;
+}
+.bulleCause img{
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+.bulleCause p {
+
+    width: 18vw;
+    font-family: var(--varDiakoniaSubFont);
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    text-align: center;
+    color: var(--varColorMarron);
+    text-shadow: #fff3e4 5px 5px 10px;
+    
+    position: relative;
+    z-index: 1;
+    justify-self: flex-end;
+    align-self: flex-end;
+    bottom: 25%;
+    right: 10%;
+}
+.merci-soutien{
+    
+    grid-column: 1;
+    grid-row: 4;
+    object-fit: scale-down;
+    width: 30vw;
+    
+    
+}
+.merci-soutien img{
+    width: 100%;
+    height: auto;
+}
+.btnConstruisonsEnsembleEvenement{
+    grid-column: 2/3;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    z-index: 2;    
+    height: auto;
+    width: 100%;
+    -webkit-box-shadow: 0 4px 8px rgba(101, 59, 1, 0.3);
+    box-shadow: 0 4px 8px rgba(101, 59, 1, 0.3);
+    
+}
+.btnConstruisonsEnsembleEvenement p{
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width:600px){
+      /* --- Bandeau fixe --- */
+.logo img {max-height: 80px;}
+
+.menu-toggle {
+    width: 30px;
+    height: 25px;
+  }
+.bandeauPresentation{height: 20vh;}
+.titreRectangleTete{font-size: clamp(4rem,10.5vw, 15rem);}
+.sousTitreRectangleTete{font-size: clamp(2.2rem,4vw, 7rem);}
+
+.textRectangleTete{
+    font-size: clamp(1.6rem,3.5vw, 5rem); 
+    text-align: center;
+    background-color: rgba(165, 114, 42, 0.449);
+    text-shadow: black 10px 10px 15px;
+    border-radius: 20px;
+}
+.tblPourquoiChoisir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tblPqChoisirImage img{
+    object-fit: contain;
+    width: 100%;
+}
+.tblContenuPqChoisir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.PqChoisirColumn{
+    width: 46%;
+    margin: 2%;
+    height: auto;
+    background-color: var(--varColorMarronClairTransparent);
+    border-radius: 20px;
+    
+}
+.PqChoisirColumn p{font-size: clamp(0.8rem, 2.8vw, 3.5rem);}
+.apercuSalle{display: none;} .merci-soutien{display: none;}
+.portoInfo{
+        grid-column: 1/5;
+        grid-row: 1;
+        
+        justify-items: center;
+
+        width: 100%;
+
+}
+.portoInfo p {font-size: clamp(1vw, 1.2rem, 3rem); max-width: 628px;}
+.bulleCause{
+        grid-row: 3; 
+        grid-column: 1/5;
+        height: 30vh;
+        overflow: hidden;
+        background-image: url(image/vous-financez-une-cause.png);
+        background-position: right;
+        background-repeat: no-repeat;
+
+
+ 
+}
+.bulleCause img{
+    display: none;
+        /* display: block;
+        top: -12%;
+        left:-115%;
+        width: 225%; */
+}
+.bulleCause p{
+    width: 58vw;
+    font-family: var(--varDiakoniaSubFont);
+    font-size: clamp(0.5rem, 1.3rem, 5rem);
+    text-align: center;
+    color: var(--varColorMarron);
+    text-shadow: #fff3e4 5px 5px 10px;
+    
+    position: relative;
+    z-index: 1;
+    justify-self: flex-end;
+    align-self: flex-end;
+    bottom: 25%;
+    right:18%;
+    
+}
+.btnConstruisonsEnsembleEvenement{
+        display: block;
+        grid-column: 1/5; 
+        margin: 8% 0 5% 0;
+        padding: 0 5% 0 5%;
+        max-width: 60%;
+        justify-self: center;
+}
+.btnConstruisonsEnsembleEvenement p{justify-self: center; align-self: center;}
+
+.domaineInterventionTitre{width: 100%;}
+.nuage-titre-domaines{width: 90%;}
+.nuage-titre-domaines img{width: 90%; height: auto;}
+.main-coeur-domaines{transform: translateX(100%); height: 15vh;}
+
+.diakoniaImagineEtTbl{width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* ------------------------------section domaine d'intervention ------------*/
+
+.sectionDomaineIntervention{
+    display: flex;
+    flex-direction: column;
+}
+.domaineInterventionTitre{
+    height: clamp(5vh, 22vh, 30vh);
+
+    
+}
+.domaineInterventionTitre p{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    text-align: center;
+    padding: 2%;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.2); /* Ombre floue sous le texte */
+    width: 100%;
+    
+ }
+.nuage-titre-domaines{
+    
+    position: absolute;
+    width: 96vw;
+    height: 15vh;
+    
+}
+.nuage-titre-domaines p{
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.nuage-titre-domaines img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    max-height: auto;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    
+}
+.main-coeur-domaines{
+    max-height: 100%;
+    position: relative;
+    z-index: 3;
+    left: 65%;
+    
+}
+
+
+.EventsTypes{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eventTypePicture{
+    height: clamp(13vh, 14vh,18vh);
+}
+.PrivateEvent, .ProEvent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 0;
+    background-image: url("image/eventType/spark-ceremonie.png");
+    background-size: 65%;
+    
+    background-repeat: no-repeat;
+    aspect-ratio: 9/11;
+    transition: all 0.3s ease;
+    
+}
+
+
+.PrivateEvent a, .ProEvent a{
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    width: 110%;
+}
+.eventTypePictures{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto auto;
+    gap: 1.5vh;
+    padding: 0 2%;
+    justify-items: center;
+    
+    justify-content: center;
+}
+
+.ceremonyText{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    margin-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+    width: clamp(10rem, 35vw, 45rem);
+    padding: 0 -4% 0 0;
+    transform: translate(0, -70%);
+    justify-self: center;
+    border-radius: 2vh;
+    
+}
+.ceremonyTitle{
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(1.7rem, 2.5vw, 3.5rem);
+    font-weight: lighter;
+    text-align: center;
+    padding: 0;
+    width: auto;
+    padding: 2%;
+    margin: 1%;
+    
+}
+
+.PrivateEvent a:hover, .ProEvent a:hover{
+    box-shadow: var(--varColorMarronPaleBis) 5px 5px 16px;
+    transform: scale(0.95);
+    background-color: var(--varColorMarronClairTransparent);
+    transition: all 0.2s ease-in-out;
+    border-radius: 6vh;
+    outline: var(--varColorMarron) solid 1px;
+    
+}
+
+.PrivateEvent a:active, .ProEvent a:active{
+        transform: scale(0.92);
+        transition: all 0.1s ease-in-out;
+
+}
+/* section diakonia imagine et organise--------------------------------------- */
+.diakoniaImagineEt{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+}
+.diakoniaImagineEtTbl{
+    width: 60%;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto 70%;
+    
+    
+}
+
+.diakoniaImagineEtLeftTop h1{
+    font-family: var(--varDiakoniaFont);
+    color: var(--varColorMarron);
+    font-size: clamp(1.5rem, 4.3vw, 5rem);
+    text-align:end;
+    line-height: 0.8;
+    padding: 6% 0 0 0;
+    font-weight: lighter;
+}
+.diakoniaImagineEtLeftBottom h2{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    text-align: center;
+    padding: -10% 0 0 0;
+    margin: 0;
+    font-weight: lighter;
+    
+}
+.diakoniaImagineEtRight{height: 100%; padding: 3% 0 0 2%;}
+.diakoniaImagineEtRight h2{
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(0.8rem, 2.2vw, 3rem);
+    text-align: left;
+    display: flex;
+    align-self:flex-start;
+    height: 100%;
+    
+}
+.contactezDiakonia{
+    width: 80%;
+    text-align: center;
+    padding: 1% 5% 0 5%;
+    display: flex;
+    justify-self: center;
+}
+.contactezDiakonia h2{
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(1rem, 1.9vw, 4rem);
+    margin: 0;
+    padding: 0;
+}
+
+
+.btnContactezDiakonia{
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+ 
+}
+

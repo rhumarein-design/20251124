@@ -1,0 +1,266 @@
+
+.bandeauPageEventPrive{
+    position: relative;
+    
+    height: 25vh;
+    display: flex;
+}
+
+.bandeauPageEventPrive img{
+    height:100%;
+    width: 100%;
+    object-fit:cover;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+#nuageBanniereEventPro{
+    height: 100%;
+    object-fit: contain;
+}
+.filtreImage{
+    background-color: #ed9d5c;
+    opacity: 0.23;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.bandeauPageEventPrive h2{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: #ed9d5c2e;
+    font-family: var(--varDiakoniaSubFont);
+    text-transform: uppercase;
+    color: var(--varColorMarron);
+    font-size: clamp(1rem, 3.5vw, 2.2rem);
+    text-align: center;
+    text-shadow: 0 2px 6px var(--varColorMarronPaleBis);
+
+}
+
+ /* ------------section------------------- */
+.DescriptionEventsPro{
+    margin: 1% 0 1% 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: ease 0.1s all;
+    
+       
+}
+.titreDescriptionEventsPro{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    padding: 2%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+.titreDescriptionEventsPro p, .DescriptionEventsProTblDroite, .catchPhraseDescriptifEventsPro{
+    
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(0.8rem, 1.5vw, 3.8rem);
+    font-weight: bolder;
+    width:max-content;
+    height: 100%;
+    
+    text-align: center;
+    padding: 0 2% 0 2%;
+    margin: 0;
+}
+
+.DescriptionEventsProTblGauche, .DescriptionEventsProTblDroite{
+    
+    width: 45%;
+
+}
+
+
+.customBulletsDescriptionFleurVerte, .customBulletsDescriptionCheckPro{
+    list-style: none;
+    
+}
+.customBulletsDescriptionFleurVerte li, .customBulletsDescriptionCheckPro li{
+    position: relative;
+    height: 2rem;
+    font-size: var(--varTextSize);
+    display: flex;
+    align-items: center;
+    
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+}
+.customBulletsDescriptionFleurVerte li::before , .customBulletsDescriptionCheckPro li::before{
+    content: "";
+    position: absolute;
+    left: -1.8rem;
+    width: 1.5rem;
+    height: 2.2rem;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.customBulletsDescriptionFleurVerte li::before{background-image: url(image/EvenementPro/customBulletsDescriptifFleurVerte.png);}
+.customBulletsDescriptionCheckPro li::before{background-image: url(image/EvenementPro/customBulletsDescriptifCheckPro.png);}
+
+.contenuDescriptionEventsProTblDroite{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.contenuDescriptionEventsProTblDroite p, .contenuDescriptionEventsProTblDroite h2{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    text-align: center;
+    
+}   
+.contenuDescriptionEventsProTblDroite h2{
+    text-transform: uppercase;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+.contenuDescriptionEventsProTblDroite p{
+    font-weight: lighter;
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+}
+
+/* ------------section------------------- */
+.catchPhraseDescriptifEventsPro{
+    text-align: center;
+    width: 100%;
+}
+.catchPhraseDescriptifEventsPro p{
+
+    padding: 0 5% 0 5%;
+
+}
+/* ------------section------------------- */
+.tblPourquoiChoisirDescriptionPro{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+    width: 100%;
+    margin: 0, 2%;
+    justify-items: center;
+    
+}
+.tblPourquoiChoisirDescriptionPro img{
+    display: block;
+    width: 25vw;
+    height: auto;
+    object-fit: scale-down;
+    justify-self:flex-end;
+    align-self: center;
+    transition: all 0.1s ease;
+}
+.tblPourquoiChoisirDescriptionPro div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* ----------------section------------------- */
+
+.tblProEventImpactPositif{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+}
+.tblProEventImpactPositif img{
+    display: block;
+    object-fit: scale-down;
+    width: 25vw;
+    min-width: 200px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    padding: 2%;
+    margin: 4%;
+    transition: all 0.1s ease;
+
+}
+.EventProBtnEtDescriptifLabel{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+.btnDescriptifLabel{width: 20vw; min-width: 200px; height: 10vh;}
+.btnDescriptifLabel p{transform: translateY(-25%);}
+
+
+.BTNEventProBtnEtDescriptifLabel{
+    display: flex;
+    justify-content: center;
+}
+.ContenuEventProBtnEtDescriptifLabel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.JustifiedContenueDescriptifLabel{
+    justify-self: center;
+    text-align: justify;
+    padding: 0 3%;
+}
+.introductionContenueDescriptifLabel{
+    text-align: center;
+    padding: 0 3%;
+}
+
+
+/* -------------------------------format téléphone */
+@media (max-width:801px) {
+    .tblPourquoiChoisirDescriptionPro{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        
+    }
+    .tblPourquoiChoisirDescriptionPro img{
+        justify-self: center;
+        width: 35vw;
+        border-radius: 20px;
+    }
+    .DescriptionEventsPro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .DescriptionEventsProTblGauche, .DescriptionEventsProTblDroite{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+ .customBulletsDescriptionFleurVerte{
+    width: 800%;
+ 
+ }
+ .ContenuEventProBtnEtDescriptifLabel{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+ }
+ .tblProEventImpactPositif{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+ }
+ .tblProEventImpactPositif img{
+    grid-row: 2;
+    min-width: 250px;
+ }
+}

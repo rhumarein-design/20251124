@@ -1,0 +1,173 @@
+
+
+
+.demandeDevisBody{
+    background-image: url(image/professional-event.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    width: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2% 0;
+    margin: 0;
+}
+.demandeDevisForm{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    
+    border: none;
+    outline: white solid 1px;
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 2px 10px;
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    padding: 2%;
+    margin: 2%;
+    
+    width:60%;
+}
+input, textarea, select {
+    
+    text-align: center;
+    
+    border-color: transparent;
+    
+    height: 8rem;
+    
+
+    
+    padding: 2%;
+    margin: 2%;
+
+    font-family: var(--varDiakoniaPoiret);
+    font-size: clamp(1.2rem, 1.8vw, 3.8rem);
+    color: var(--varColorMarron);
+
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    
+    background-color: rgb(255, 255, 255, 0.6);
+    color: var(--varColorMarron);
+    
+    outline: rgb(0, 0, 0, 0.4) solid 1px;
+    border-radius: 20px;
+
+    transition: all 0.2s ease-in-out;
+    
+    
+}
+
+input::placeholder, textarea::placeholder,select option::placeholder{
+    color: var(--varColorMarron);
+    font-size: var(--varSubTitleSize);
+    font-family: var(--varDiakoniaSubFont);
+    
+}
+.customSelect select{
+    font-size: var(--varSubTitleSize);
+    color: var(--varColorMarron);
+    font-family: var(--varDiakoniaSubFont);
+}
+
+
+
+.demandeDevisForm h1, .demandeDevisForm h2, .demandeDevisForm p{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    text-align: center;
+    text-shadow: 5px 5px 25px rgba(255, 255, 255, 0.9); /* Ombre floue sous le texte */
+    margin: 1%;
+    padding: 1%;
+    
+}
+.emailZoneSaisie{
+    width: 90%;
+    margin: 0 5%;
+
+}
+input{
+    height: 2rem;
+    width: 45%;
+    
+}
+select{
+    height: 4rem;
+    width: 45%;
+    transform: translateX(50%);
+}
+
+
+textarea{
+    height: 6rem;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 3% 0;
+    text-align: left;
+    /* scrollbar-3dlight-color: blueviolet; */
+}
+
+.btn-envoyer-devis{
+    width: 20vw;
+    align-self: center;
+    height: 3rem;
+    border-radius: 15px;
+    background-color: var(--varColorMarronPaleBis);
+    
+    font-family: var(--varDiakoniaPoiret);
+    font-size: var(--varSubTitleSize);
+    color: var(--varColorMarron);
+    text-align: center;
+    text-decoration: none;
+    outline: rgba(255, 252, 252, 0.8) solid 1px;
+
+
+    
+    border-radius: 999px;
+    box-shadow: var(--varColorOrangePale) 0 20px 30px -10px;
+    box-sizing: border-box;
+    color: var(--varColorMarron);
+
+    
+    font-family: var(--varDiakoniaPoiret);
+    font-size: var(--varSubTitleSize);
+    font-weight: bolder ;
+    line-height: 1.5rem;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+}
+
+
+.btn-envoyer-devis:hover{
+    cursor: pointer;
+    background-color: var(--varColorMarronPaleBis);
+
+    color: var(--varColorMarron);
+    text-decoration: none;
+    outline: var(--varColorMarron) solid 1.5px;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+.btn-envoyer-devis:active{
+    transform: scale(1);
+
+}

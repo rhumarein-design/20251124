@@ -1,0 +1,513 @@
+
+.bandeauPageCeremonie{
+    position: relative;
+    overflow: hidden;
+    height: 25vh;
+    display: flex;
+    width: 100%;
+}
+
+.bandeauPageCeremonie img{
+    height:100%;
+    width: 100vw;
+    object-fit:cover;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    
+}
+.bandeauPageCeremonie h2{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: #ed9d5c2e;
+    font-family: var(--varDiakoniaSubFont);
+    text-transform: uppercase;
+    color: var(--varColorMarron);
+    font-size: clamp(1rem, 3.5vw, 2.2rem);
+    text-align: center;
+    text-shadow: 0 2px 6px var(--varColorMarronPaleBis);
+
+}
+
+
+.DescriptionEventsPrive{
+    margin: 1% 0 1% 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.titreDescriptionEventsPrive{
+    display: flex;
+    width: 60vw;
+}
+
+.logoAccrochecentrage{
+    transform: translateY(10px);
+}
+
+.titreDescriptionEventsPrive p{
+    
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(1rem, 2vw, 4rem);
+    font-weight: bolder;
+    width: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+    padding: 0 5% 0 2%;
+    margin: 0;
+}
+.catchPhraseDescriptifEventsPrive{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 100vw;
+}
+.catchPhraseDescriptifEventsPrive p{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    margin: 0;
+    padding: 0 5% 0 5%;
+    font-size: clamp(0.8rem, 1.4vw, 2rem);
+}
+.DescriptionAccompagnementtbl{
+ display: flex;
+ flex-wrap: wrap;
+ 
+    padding: 0 3% 0 3%;
+    overflow: hidden;
+}
+.DescriptionAccompagnementLeft, .DescriptionAccompagnementRight{
+    width: 50%;
+    
+}
+.customBulletsDescriptionFleur, .customBulletsDescriptionCheck{
+    list-style: none;
+    
+}
+.customBulletsDescriptionFleur li, .customBulletsDescriptionCheck li{
+    position: relative;
+    min-height: 2rem;   /* minimum pour aligner les puces */
+    height: auto;       /* permet d’agrandir selon le texte */
+    display: flex;
+    align-items: flex-start; /* important si texte sur 2+ lignes */
+    padding-left: 2.2rem;
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.customBulletsDescriptionFleur li::before, .customBulletsDescriptionCheck li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 2.2rem;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.customBulletsDescriptionFleur li::before{background-image: url(image/ceremonie&moments/customBulletsDescriptifFleur.png);}
+.customBulletsDescriptionCheck li::before{background-image: url(image/ceremonie&moments/customBulletsDescriptifCheck.png);}
+.DescriptionAccompagnementRight p{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+}
+.btnEtVisuDescriptifRight img{
+    display: block;
+}
+
+.btnEtVisuDescriptifRight{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-items: start;
+    height: fit-content;
+    height: 15vh;
+    margin: 0 0 4% 0;
+    padding: 0 0 2% 0;
+}
+
+.DescriptionAccompagnementtbl img{
+    height: auto;
+    object-fit: scale-down;
+    transform: translateX(-50%);
+    width: 40vw;
+    display: block;
+    bottom: 2%;
+    overflow: hidden;
+
+}
+
+.largeurBtnSpecDrescriptif{
+    width: 90%;
+    display: flex;
+
+    align-items: center;
+    z-index: 1;
+}
+.tblVotreGrandJourDescriptif{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    padding: 0 5% 0 5%;
+    margin: 0;
+    overflow: hidden;
+}
+.tblVotreGrandJourDescriptifTitre{
+    grid-row: 1;
+    grid-column: 1/3;
+    padding: 8%;
+    background-image: url(image/ceremonie&moments/nuage-titre-events-prives.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: fit-content;
+    
+}
+
+.tblVotreGrandJourDescriptifTitre h1, .tblVotreGrandJourDescriptifTitre h2{
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.tblVotreGrandJourDescriptifTitre h1{
+    font-size: clamp(1.5rem, 1.7vw, 2.5rem);
+    text-transform: uppercase;
+}
+.tblVotreGrandJourDescriptifTitre h2{
+    font-size: clamp(1rem, 1.2vw, 2rem);
+}
+.descriptContenu21{
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    
+}
+
+#imgCoupleVotreGrandJour{
+    width:14vw;
+    display: block;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 10%;
+    transform: translate(80%,10%);
+    object-fit: scale-down;
+}
+#imgCoeurMainVotreGrandJour{
+    width:37vw;
+    display: block;
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    transform: translate(30%, 70%);
+    opacity: 0.6;
+}
+.descriptifTextCoupleEventPrive{
+    font-family: var(--varDiakoniaPoiret);
+    color: var(--varColorMarron);
+    font-size: clamp(1rem, 1.8vw, 3rem);
+    display: block;
+    line-height: 1.2;
+    padding: 3% 0 0 5%;
+    margin: 0;
+}
+.tbl1x2-descriptContenu21{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.descriptContenu31{
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    display: grid;    
+}
+/* superposition des couches */
+.coucheTblEventPrive, .content-descriptContenu31{grid-area: 1/1;}
+.bulleTblEventPriveMariage{
+    background-image: url(image/ceremonie&moments/tblEventPriveDescriptifBulles.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+.nuageTblEventPriveMariage{
+    background-image: url(image/ceremonie&moments/nuage-titre-events-prives-bulles.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(80px, -20px);
+    z-index: 0;
+    
+    
+}
+.content-descriptContenu31{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh;
+
+}
+#content-descriptContenu31-p1, #content-descriptContenu31-p2{
+display: block;
+grid-row: 1;
+padding: 0;
+margin: 0;
+font-family: var(--varDiakoniaSubFont);
+color: var(--varColorMarron);
+text-align: center;
+z-index: 3;
+height: 40%;
+
+}
+#content-descriptContenu31-p1{
+    transform: translate(50%,70%);
+    grid-column: 1;
+    font-size: clamp(1rem, 1.3vw, 3.5rem);
+    
+    
+}
+
+#content-descriptContenu31-p2{
+    
+    transform: translate(65px,100px);
+    width: 70%;
+    grid-column: 2;
+    font-size: clamp(0.7rem, 1.1vw, 3.3rem);
+    
+}
+.descriptContenu22-32{
+    grid-column: 2;
+    grid-row: 2/4;
+    width: 100%;
+    height: 100%;
+}
+.descriptContenu22-32-p, .nuagePayettesEventPriveMariage{
+ grid-area: 1/1;
+}
+.nuagePayettesEventPriveMariage{
+
+    background-image: url(image/img1.png);
+    transform: translate(0,-100px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    z-index: 0;
+}
+.descriptContenu22-32-p{
+    z-index: 2;
+    transform: translate(0,-675px);
+    display: block;
+    height: 100%;
+
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    font-size: clamp(1.2rem, 1.5vw, 3.5rem);
+    font-family: var(--varDiakoniaSubFont);
+    
+}
+.descriptContenu22-32-p span{
+    font-weight: bolder;
+}
+
+/* propositions des event prives */
+.eventPriveMariagePropositions{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.MariagePropositionsCleEnMain, .MariagePropositionsTraitDUnion, .MariagePropositionsFilDuJour, .MariagePropositionsPointDeDepart{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 1%;
+    margin: 0 0 3% 0;
+    
+    text-align: center;
+
+    outline: var(--varColorMarron) solid 2px;
+    border-radius: 150px 150px 0 0;
+    max-width: 300px;
+
+}
+
+.eventPriveMariagePropositions img{
+    display: block;
+    object-fit: scale-down;
+    width: 100%;
+    justify-self: center;
+}
+.eventPriveMariagePropositions h1, .eventPriveMariagePropositions h2, .eventPriveMariagePropositions p{
+    
+    height: 100%;
+    text-align: center;
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    
+
+}
+.eventPriveMariagePropositions h1, .eventPriveMariagePropositions h2{
+    font-weight: lighter;
+}
+.eventPriveMariagePropositions h1{
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+.eventPriveMariagePropositions h2{
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+}
+.eventPriveMariagePropositions p{
+    padding: 1% 0 0 0;
+    height: auto;
+    font-size: clamp(0.75rem, 1vw, 2rem);
+    align-self: center;    
+    
+    
+}
+.prix-a-partir-de{
+    justify-self: center;
+    width: 60%;
+    border-top: var(--varColorMarron) solid 2px;
+    height: 2rem;
+}
+
+.MariagePropositionsBtn{
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    
+}
+.asterisque{
+    padding: 1% 0 0 0;
+    height: auto;
+    font-size: clamp(0.75rem, 1.2vw, 2rem);
+    align-self: center;   
+    color: var(--varColorMarron); 
+    font-family: var(--varDiakoniaSubFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+.asterisque p{
+    display: block;
+    width: 80%;
+}
+.etoile{
+    font-size: clamp(2rem, 2.3vw,3.8rem);
+}
+.asterisque span {
+    font-weight: bolder;
+}
+
+/* ---------------bandeau de defilment continue */
+
+.bandeauPhotoDeroulant {
+  overflow: hidden;
+}
+
+.photosBandeauMomentVie {
+  display: flex;
+  animation: defilement-continu 45s linear infinite;
+}
+
+.photosBandeauMomentVie img {
+  height: 15vw; /* adapter selon besoin */
+  object-fit: cover;
+  margin: 0 0.5%;
+}
+
+@keyframes defilement-continu {
+  from { transform: translateX(0); }
+  to { transform: translateX(-127%); } /* défilement continu */
+}
+
+
+
+@media (max-width: 600px) {
+  .bandeauPageCeremonie img,
+  .bandeauPageCeremonie {height: 18vh;}
+  .bandeauPageCeremonie h2 {font-size: 1.6rem;}
+ .titreDescriptionEventsPrive{width: 100vw;}
+ .DescriptionEventsPrive{ display: flex; justify-content: center;}
+
+  .DescriptionAccompagnementtbl{justify-content: center;  }
+  .DescriptionAccompagnementLeft, .DescriptionAccompagnementRight{
+    position: relative;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .DescriptionAccompagnementtbl img{width: 60vw;}
+  .customBulletsDescriptionFleur li::before, .customBulletsDescriptionCheck li::before{
+    height: 2.2rem;
+    margin: 0;
+}
+.customBulletsDescriptionFleur li, .customBulletsDescriptionCheck li {
+    margin: 2vw 0;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.DescriptionAccompagnementRight p{
+    text-align: center;
+    margin-top: 2vh;
+}
+.largeurBtnSpecDrescriptif{width: 45vw;height: 7vh;}
+
+.eventPriveMariagePropositions{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding: 1%;   
+}
+
+#imgCoeurMainVotreGrandJour{display: none;}
+#imgCoupleVotreGrandJour{transform: translate(5%,10%);}
+
+.tblVotreGrandJourDescriptif{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    margin: 0;
+    gap: 0;
+    padding: 2%;
+}
+.tblVotreGrandJourDescriptifTitre{grid-row: 1; grid-column: 1;}
+.descriptContenu21{grid-row: 2; grid-column: 1;}
+.descriptContenu31{grid-row: 3; grid-column: 1; scale: 1.5;}
+.descriptContenu22-32{grid-row: 4; grid-column: 1;}
+.descriptContenu31{transform: translateX(-17%);}
+#content-descriptContenu31-p1{transform: translate(50%,85%);}
+#content-descriptContenu31-p2{transform: translate(40%,75%);}
+
+.descriptContenu22-32{height: 50vh; margin-bottom: -30%;}
+.descriptContenu22-32-p{transform: translate(0,-120%);}
+}

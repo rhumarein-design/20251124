@@ -1,0 +1,105 @@
+
+
+/* ===== Media Query pour mobiles (≤900px) ===== */
+@media (min-width:600px) and(max-width: 900px) {
+
+  /* --- Texte principal --- */
+  .titreRectangleTete {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    transform: translate(0, 0);
+    text-align: center;
+  }
+ .sousTitreRectangleTete{
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    transform: translate(0, 0);
+    text-align: center;
+ }
+
+  .textRectangleTete {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    margin: 0 10px 20px 10px;
+    transform: translate(0, 0);
+    text-align: center;
+  }
+
+  /* --- Bandeau fixe --- */
+  .bandeauMain {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px auto;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+
+  .menu-toggle {
+    width: 30px;
+    height: 25px;
+  }
+
+  .itemMenu {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* --- Tableau Pourquoi Choisir --- */
+  .tblPourquoiChoisir {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .tblcontenuPqChoisir{
+    top: -20%;
+    transform: translate(0, -100%);
+  }
+  .tblPqChoisirImage {
+    order: -1; /* mettre l'image au dessus */
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .tblPqChoisirImage img {
+    width: 100%;
+    height: auto;
+  }
+.PqChoisirColumn img{
+    width: 80%;
+    object-fit: scale-down;
+    margin: 1%;
+    transform: translate(0,-40%);
+}
+}
+
+
+
+  /* --- Bulles d'information et causes --- */
+
+
+@media (max-width:601px) {
+    
+  /* --- Événements --- */
+  .EventsTypes {
+    flex-direction: column;
+    top: auto;
+    margin-top: 20px;
+  }
+
+  .PrivateEvent, .ProEvent {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .PrivateEvent img, .ProEvent img {
+    max-height: 250px;
+  }
+
+  .PrivateEvent p, .ProEvent p {
+    font-size: clamp(0.7rem, 3vw, 1rem);
+    width: 100%;
+  }
+
+
+.sectionDomaineIntervention{
+    margin-top: 5%;
+}
+}
