@@ -2,15 +2,13 @@
 
 
 .bandeauPresentation{
-        /* background-image:url("image/al-elmes-Cheers.jpg"); */
     width: 100%;
     align-content: center;
     position: relative;
-    height: 40vh;
     display: flex;
     justify-content: center; /* centre horizontalement */
     align-items: center;     /* centre verticalement */
-
+    overflow: hidden;
 }
 .bandeauPresentation img{
     height: 100%;
@@ -18,12 +16,13 @@
     position: absolute;
     z-index: -1000;
     object-fit: cover;
-    overflow: hidden;
+    
 }
 .rectangleTexte{
     background-color: var(--varColorMarronTransparent);
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
+    margin:20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,8 +47,8 @@ text-align: center;
 }
 
 .sousTitreRectangleTete{
-display: block;
-text-align: center;
+    display: block;
+    text-align: center;
     font-family: var(--varDiakoniaSubFont);
     text-transform: uppercase;
     font-weight: lighter;
