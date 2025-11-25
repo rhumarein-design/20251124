@@ -28,7 +28,7 @@
 
 
     --varTextSize:clamp(0.8rem, 1.2vw, 1.5rem);
-    --varSubTitleSize:clamp(1rem, 1.6vw, 2.3rem);
+    --varSubTitleSize:clamp(1rem, 1.2, 2.3rem);
 
 
     --varColorBeigeFonce: #fbdeb6;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     font-family: var(--varDiakoniaFont);
     font-weight: lighter;
-    font-size: clamp(2.1rem, 3.7vw, 4.5rem);
+    font-size: clamp(2.1rem, 3.4vw, 4.5rem);
     line-height: 0.8;
     padding: 6% 0 0 0;
     z-index: 2;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--varDiakoniaSubFont);
     font-weight: lighter;
     color: var(--varColorMarron);
-    font-size: clamp(0.8rem, 2vw, 2rem); 
+    font-size: clamp(0.8rem, 1.8vw, 2rem); 
     line-height: 0.9;   
     z-index: 2;
     text-transform: uppercase;
