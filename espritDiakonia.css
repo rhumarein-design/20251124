@@ -154,18 +154,13 @@
     margin: 4vw;
     backdrop-filter: blur(1px);
     transition: all 0.2s ease-in-out;
-    
-
-    
-    /* background-color: var(--varColorMarronTransparent);
-    box-shadow: var(--varColorMarronTransparent) 10px 10px 30px; */
 
 }
 .contenuQuiEstD h2{
     font-family: var(--varDiakoniaPoiret);
     letter-spacing: 4px;
     font-weight: lighter;
-    font-size: clamp(1rem, 2rem, 4rem);
+    font-size: clamp(1rem, 2.6rem, 5rem);
     color: var(--varColorMarron);
 }
 .contenuQuiEstD p{
@@ -176,32 +171,35 @@
     color: var(--varColorMarron);
     
 }
-
+.contenuQuiEstDPositionHaut{
+    justify-self: center;
+    align-self: flex-start;
+    margin: 8% 0 0 0;
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+    height: max-content;
+}
 .contenuQuiEstDPositionGauche{
     justify-self: flex-start;
     align-self: center;
-    margin: 0 2%;
+    margin: 0 3%;
     width: 70%;
-
-
 }
 .contenuQuiEstDPositionCentre{
     justify-self: center;
     align-self: flex-end;
     width: 70%;
-    margin: 2% 0;
-    
-    
-
+    margin: 2% 0 1% 0;
 }
 
 .contenuQuiEstD:hover{
-    background-color: rgba(227, 207, 173, 0.103);
+    background-color: rgba(227, 202, 173, 0.195);
     border-radius: 1vh;
-    transform: scale(1.05);
+    transform: scale(1.07);
     backdrop-filter: blur(4px);
     box-shadow: rgba(138, 128, 108, 0.325) 0px 1px 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     
 
     position: relative;

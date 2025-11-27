@@ -78,3 +78,45 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+// custom select
+document.querySelectorAll('.custom-select').forEach(selectWrapper => {
+  const select = selectWrapper.querySelector('select');
+
+  // Div affichant la valeur sélectionnée
+  const displayDiv = document.createElement('div');
+  displayDiv.classList.add('selected');
+  displayDiv.textContent = select.options[select.selectedIndex].text;
+  selectWrapper.appendChild(displayDiv);
+
+  // Liste des options
+  const optionsList = document.createElement('ul');
+  Array.from(select.options).forEach(option => {
+    const li = document.createElement('li');
+    li.textContent = option.text;
+    li.dataset.value = option.value;
+
+    li.addEventListener('click', () => {
+      select.value = option.value;
+      displayDiv.textContent = option.text;
+      selectWrapper.classList.remove('open');
+      select.dispatchEvent(new Event('change')); // déclenche l'événement natif
+    });
+
+    optionsList.appendChild(li);
+  });
+  selectWrapper.appendChild(optionsList);
+
+  // Toggle ouverture/fermeture
+  displayDiv.addEventListener('click', () => {
+    selectWrapper.classList.toggle('open');
+  });
+
+  // Fermer si clic à l’extérieur
+  document.addEventListener('click', e => {
+    if (!selectWrapper.contains(e.target)) {
+      selectWrapper.classList.remove('open');
+    }
+  });
+});

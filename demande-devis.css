@@ -171,3 +171,84 @@ textarea{
     transform: scale(1);
 
 }
+.MenuDeroulantTypeEvent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  font-size: var(--varSubTitleSize);
+  font-family: var(--varDiakoniaSubFont);
+  color: var(--varColorMarron);
+      outline: var(--varColorMarron) solid 1px;
+    border-radius: 20px;
+
+}
+
+.custom-select select {
+  display: none; /* cache le select natif */
+}
+
+.custom-select .selected {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+
+  
+}
+
+.custom-select .selected:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-select::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  
+}
+
+.custom-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: none;
+
+}
+
+.custom-select.open ul {
+  display: block;
+}
+
+.custom-select ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-select ul li:hover {
+         transform-origin: top;
+    scale: 1.02;
+    transition: all 0.1s ease-in-out; 
+  background-color: var(--varColorOrangePale);
+  border-radius: 20px;
+  
+}
+.Type-event{height: 0; padding: -5px 0;}
