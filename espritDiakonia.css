@@ -12,7 +12,7 @@
     width: auto;
     height: auto;
     padding: 0 auto;
-    margin: auto;
+    margin: -2%;
     text-align: center;
     color: var(--varColorMarron);
     
@@ -46,8 +46,12 @@
     grid-template-rows: auto auto auto auto auto auto auto auto;
     padding: 2% 0 0 0;
     margin: 0;
-    width: 80%;
+    width: 90%;
     
+    font-family: var(--varDiakoniaSubFont);
+    color: var(--varColorMarron);
+    font-size: var(--varTextSize);
+    text-align: justify;
 }
 
 
@@ -79,7 +83,6 @@
     padding: 0;
     margin: 0;
     line-height: 1;
-    
 }
 .D2,.I2,.A2,.K2,.O2,.N2,.I22,.A22{
     font-size: clamp(0.875rem, 1rem, 5rem); 
@@ -88,7 +91,8 @@
     padding: 2% 0 0 4%;
     margin: 0;
     line-height: 1;
-    
+
+    height: 8vh;
     
 }
 .D2 span,.I2 span,.A2 span,.K2 span,.O2 span,.N2 span,.I22 span,.A22 span{
@@ -160,8 +164,9 @@
     font-family: var(--varDiakoniaPoiret);
     letter-spacing: 4px;
     font-weight: lighter;
-    font-size: clamp(1rem, 2.6rem, 5rem);
+    font-size: clamp(1rem, 2.3rem, 5rem);
     color: var(--varColorMarron);
+    padding: 0;
 }
 .contenuQuiEstD p{
     font-family: var(--varDiakoniaPoiret);
@@ -210,6 +215,12 @@
         display: flex;
         flex-direction: column;
     }
+    .contenuQuiEstDPositionHaut, .contenuQuiEstDPositionGauche, .contenuQuiEstDPositionCentre{
+        justify-self: center;
+        align-self: center;
+        width: 90%;
+        margin: 2% 0 1% 0;
+    }
     .gImageD{
         align-self: center;
     }
@@ -217,5 +228,15 @@
         max-width: 100%;
         transform: translateX(0);
     }
+    .tblDiakonia{
+        width: 90%;
+    }
+    .tblDiakonia img{
+    
+    width:100%;
+    height: 10%;
+    
+    }
+
 }
 
