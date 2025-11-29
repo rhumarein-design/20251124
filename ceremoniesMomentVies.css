@@ -483,8 +483,12 @@ height: 40%;
   .bandeauPageCeremonie img,
   .bandeauPageCeremonie {height: 18vh;}
   .bandeauPageCeremonie h2 {font-size: 1.6rem;}
+
  .titreDescriptionEventsPrive{width: 100vw;}
- .DescriptionEventsPrive{ display: flex; justify-content: center;}
+ .logoAccrochecentrage{width: 100%; }
+ .titreDescriptionEventsPrive p{ padding-left: 8% ; text-align: justify;}
+
+ .DescriptionEventsPrive{display: flex; justify-content: center;}
 
   .DescriptionAccompagnementtbl{justify-content: center;  }
   .DescriptionAccompagnementLeft, .DescriptionAccompagnementRight{
@@ -499,14 +503,18 @@ height: 40%;
     margin: 0;
 }
 .customBulletsDescriptionFleur li, .customBulletsDescriptionCheck li {
-    margin: 2vw 0;
+    margin: 2vw 0 3vw -15%;
     height: 2rem;
     display: flex;
     align-items: center;
 }
 .DescriptionAccompagnementRight p{
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    height: auto;
+    width: 100%;
+    
+
 }
 .largeurBtnSpecDrescriptif{width: 45vw;height: 7vh; margin: 10% 0 0 20%;}
 
