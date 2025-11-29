@@ -150,7 +150,7 @@ section{
 .DescriptionAccompagnementtbl img{
     height: auto;
     object-fit: scale-down;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
     width: 40vw;
     display: block;
     bottom: 2%;
@@ -238,6 +238,7 @@ section{
     font-family: var(--varDiakoniaPoiret);
     color: var(--varColorMarron);
     font-size: var(--varSubTitleSize);
+
     display: block;
     line-height: 1.2;
     padding: 3% 0 2% 2%;
@@ -507,7 +508,7 @@ height: 40%;
     text-align: center;
     margin-top: 2vh;
 }
-.largeurBtnSpecDrescriptif{width: 45vw;height: 7vh;}
+.largeurBtnSpecDrescriptif{width: 45vw;height: 7vh; margin: 10% 0 0 20%;}
 
 .eventPriveMariagePropositions{
     display: grid;
@@ -516,24 +517,50 @@ height: 40%;
 }
 
 #imgCoeurMainVotreGrandJour{display: none;}
-#imgCoupleVotreGrandJour{transform: translate(5%,10%);}
+#imgCoupleVotreGrandJour{width: 14vw; transform: translate(5%,20%);}
 
 .tblVotreGrandJourDescriptif{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     margin: 0;
     gap: 0;
     padding: 2%;
 }
-.tblVotreGrandJourDescriptifTitre{grid-row: 1; grid-column: 1;}
-.descriptContenu21{grid-row: 2; grid-column: 1;}
-.descriptContenu31{grid-row: 3; grid-column: 1; scale: 1.5;}
-.descriptContenu22-32{grid-row: 4; grid-column: 1;}
+.tblVotreGrandJourDescriptifTitre{grid-row: 1; grid-column: 1; 
+    padding: 14%;
+    margin-bottom: -6%;
+}
+.descriptifTextCoupleEventPrive span{font-weight: bolder;}
+.descriptContenu21{grid-row: 2; grid-column: 1;    
+    transform: translateX(0%); 
+    width: 100%;
+}
+
+.tbl1x2-descriptContenu21{
+    margin-top: 2%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+.descriptifTextCoupleEventPrive{padding: 0; width: 100%;}
+#descriptifTextCoupleEventPriveP2{transform: translateY(-30%);}
+.descriptContenu31{grid-row: 3; grid-column: 1; 
+    scale: 1.5;
+    width: 100%;
+}
+.nuageTblEventPriveMariage{scale: 0.8;}
+.descriptContenu22-32{
+    grid-row: 4; grid-column: 1; 
+    margin: -30% 0 -20% 0; 
+    height: 55vh;
+    }
+.descriptContenu22-32-p{align-self: center; justify-self: center; text-align: center;}
 .descriptContenu31{transform: translateX(-17%);}
 #content-descriptContenu31-p1{transform: translate(50%,85%);}
-#content-descriptContenu31-p2{transform: translate(40%,75%);}
+#content-descriptContenu31-p2{transform: translate(30%,90%);}
 
-.descriptContenu22-32{height: 50vh; margin-bottom: -30%;}
-.descriptContenu22-32-p{transform: translate(0,-120%);}
+
+
+
 }

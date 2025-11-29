@@ -227,6 +227,17 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 4px;
 
 }
+@media (max-width: 601px){
+    .logoAccroche h1{line-height: 1.1;}
+    .logoAccroche h2{line-height: 1.5;}
+    .logoAccroche h1, .logoAccroche h2{
+     scale: 1.3;
+    }
+    .ajoutLogoAccroche{
+        line-height: 1.5;
+        scale: 1.5;
+    }
+}
 
 .highlight-marron {
     background-image: url('image/highlight/highlight-marron.png');
