@@ -48,12 +48,17 @@ section{
     
 }
 .titreDescriptionEventsPrive{
-    display: flex;
-    width: 60vw;
+display: grid;
+grid-template-columns: 40% 60%;
+width: 90vw;
 }
 
 .logoAccrochecentrage{
-    transform: translateY(10px);
+    justify-self: flex-end;
+    align-self: center;
+    margin: 0 5% 0 0 ;
+    padding: 2% 0 0 0;;
+    
 }
 
 .titreDescriptionEventsPrive p{
@@ -484,9 +489,14 @@ height: 40%;
   .bandeauPageCeremonie {height: 18vh;}
   .bandeauPageCeremonie h2 {font-size: 1.6rem;}
 
- .titreDescriptionEventsPrive{width: 100vw;}
- .logoAccrochecentrage{width: 100%; }
- .titreDescriptionEventsPrive p{ padding-left: 8% ; text-align: justify;}
+
+ .logoAccrochecentrage{margin:2% 0 0 5%; }
+
+.titreDescriptionEventsPrive{
+    display: flex;
+    flex-direction: column;
+} 
+ .titreDescriptionEventsPrive p{  text-align: center;}
 
  .DescriptionEventsPrive{display: flex; justify-content: center;}
 
@@ -536,7 +546,7 @@ height: 40%;
     padding: 2%;
 }
 .tblVotreGrandJourDescriptifTitre{grid-row: 1; grid-column: 1; 
-    padding: 14%;
+    padding: 10%;
     margin-bottom: -6%;
 }
 .descriptifTextCoupleEventPrive span{font-weight: bolder;}
@@ -550,14 +560,16 @@ height: 40%;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     justify-items: center;
+
 }
 .descriptifTextCoupleEventPrive{padding: 0; width: 100%;}
-#descriptifTextCoupleEventPriveP2{transform: translateY(-30%);}
+#descriptifTextCoupleEventPriveP2{margin: 5% 0;}
 .descriptContenu31{grid-row: 3; grid-column: 1; 
     scale: 1.5;
     width: 100%;
 }
 .nuageTblEventPriveMariage{scale: 0.8;}
+.bulleTblEventPriveMariage{display: none;}
 .descriptContenu22-32{
     grid-row: 4; grid-column: 1; 
     margin: -30% 0 -20% 0; 
