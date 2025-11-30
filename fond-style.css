@@ -22,7 +22,7 @@
 }
 
 section{
-    outline: rgba(0, 0, 255, 0.1) solid 1px;
+    outline: rgba(0, 0, 255, 0.05) solid 1px;
 }
 /* déclaraton de variable - police - couleur */
 :root{
@@ -32,8 +32,8 @@ section{
 
 
     --varTextSize:clamp(1rem, 1.2vw, 1.5rem);
-    --varSubTitleSize:clamp(1rem, 1.2, 2.3rem);
-
+    --varSubTitleSize:clamp(1rem, 1.4vw, 2.3rem);
+    --varTitleSize:clamp(1.3rem, 2vw, 4rem);
 
     --varColorBeigeFonce: #fbdeb6;
     --varColorBeigeClair:#fbecca;

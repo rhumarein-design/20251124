@@ -8,15 +8,6 @@
     align-items: center;
     
 }
-.titrePage{
-    width: auto;
-    height: auto;
-    padding: 0 auto;
-    margin: -2%;
-    text-align: center;
-    color: var(--varColorMarron);
-    
-}
 .EspritDiakonia img{
     position: absolute;
     display: block;
@@ -35,10 +26,6 @@
     font-size: clamp(1rem, 3.4rem, 6rem);
     /* important pour placer l'img en fonction de son conteneur */
     position: relative;
-}
-.sloganEsprit{
-    font-family: var(--varDiakoniaPoiret);
-    font-size: clamp(1rem, 2rem, 5rem);
 }
 .tblDiakonia{
     display: grid;
@@ -219,7 +206,7 @@
         margin: 0;
         padding: 2% 0 2% 3%;
     }
-
+    
 
 
 
@@ -227,14 +214,20 @@
         display: flex;
         flex-direction: column;
     }
-    .contenuQuiEstDPositionHaut, .contenuQuiEstDPositionGauche, .contenuQuiEstDPositionCentre{
-        justify-self: center;
+
+ .contenuQuiEstDPositionGauche, .contenuQuiEstDPositionCentre{
+        
         align-self: center;
         width: 90%;
-        margin: 2% 0 1% 0;
+        margin: 1% 0 1% 0;
+    }
+    .contenuQuiEstDPositionHaut{
+        width: 50%;
+        padding:2%;
+        margin: -25% 0 0 5%;
     }
     .gImageD{
-        align-self: center;
+        align-self: flex-end;
     }
     .contenuQuiEstD{
         max-width: 100%;
