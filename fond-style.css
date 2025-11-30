@@ -21,9 +21,9 @@
 
 }
 
-section{
+/* section{
     outline: rgba(0, 0, 255, 0.05) solid 1px;
-}
+} */
 /* déclaraton de variable - police - couleur */
 :root{
     --varDiakoniaFont: 'Brown Sugar';
