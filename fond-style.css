@@ -20,6 +20,10 @@
     font-style: normal;
 
 }
+
+section{
+    outline: rgba(0, 0, 255, 0.1) solid 1px;
+}
 /* déclaraton de variable - police - couleur */
 :root{
     --varDiakoniaFont: 'Brown Sugar';
@@ -27,7 +31,7 @@
     --varDiakoniaPoiret: 'Poiret One', cursive;
 
 
-    --varTextSize:clamp(0.8rem, 1.2vw, 1.5rem);
+    --varTextSize:clamp(1rem, 1.2vw, 1.5rem);
     --varSubTitleSize:clamp(1rem, 1.2, 2.3rem);
 
 
