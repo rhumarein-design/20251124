@@ -97,11 +97,10 @@
 }
 .D2 span,.I2 span,.A2 span,.K2 span,.O2 span,.N2 span,.I22 span,.A22 span{
     background-image: url(image/highlight/esprit-diakonia-highlight-gris.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: auto;
-    width: auto;
+
     
     
 }
@@ -211,6 +210,19 @@
     z-index: 5;
 }
 @media(max-width:601px){
+    .presentationEsprit{
+        height: auto;
+    }
+    .EspritDiakonia img{height: 8vh;}
+    .D2,.I2,.A2,.K2,.O2,.N2,.I22,.A22{
+        height: auto;
+        margin: 0;
+        padding: 2% 0 2% 3%;
+    }
+
+
+
+
     .quiEstDerriereD{
         display: flex;
         flex-direction: column;
@@ -228,15 +240,9 @@
         max-width: 100%;
         transform: translateX(0);
     }
-    .tblDiakonia{
-        width: 90%;
-    }
-    .tblDiakonia img{
-    
-    width:100%;
-    height: 10%;
-    
-    }
+    .tblDiakonia{width: 95%;    }
+   
+ 
 
 }
 

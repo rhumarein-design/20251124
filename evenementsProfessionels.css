@@ -301,5 +301,6 @@
    .customBulletsDescriptionFleurVerte {
     width: 100%;
 }
+.tblPourquoiChoisirDescriptionPro img{width: 35vw;}
 .btnDescriptifLabel p{transform: translateY(0%);}
 }
