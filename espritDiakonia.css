@@ -140,7 +140,7 @@
     align-self: center;
     text-align: justify;
     border-radius: 1vh;
-    padding:  0 1%;
+    padding:  0 5%;
     margin: 4vw;
     backdrop-filter: blur(1px);
     transition: all 0.2s ease-in-out;
@@ -166,8 +166,8 @@
     justify-self: center;
     align-self: flex-start;
     margin: 8% 0 0 0;
-    padding: 2%;
-    width: 40%;
+    padding: 5%;
+    width: 70%;
     text-align: center;
     height: max-content;
 }
